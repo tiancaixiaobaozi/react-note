@@ -1,0 +1,26 @@
+.show {
+  opacity: 1;
+}
+.hide {
+  opacity: 0;
+}
+
+.child-bar-enter {
+  opacity: 0;
+}
+.child-bar-enter-active {
+  opacity: 1;
+  transition: opacity 0.2s;
+}
+.child-bar-enter-done { opacity: 1;}
+
+.child-bar-exit {
+  opacity: 1;
+}
+.child-bar-exit-active {
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+.child-bar-exit-done {
+  opacity: 0;
+}
