@@ -1,8 +1,8 @@
 import React, { useContext } from "react";
-import { ColorContextWrapper } from "./ColorContextWrapper";
+import { ColorContext } from "./ColorContextWrapper";
 
 function ColorText() {
-  const { color } = useContext(ColorContextWrapper)
+  const { color } = useContext(ColorContext)
   return (
     <div style={{ color }}>字体颜色:{color}</div>
   )

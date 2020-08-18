@@ -1,6 +1,6 @@
 import React, { createContext, useReducer } from "react";
 
-export const ColorContextWrapper = createContext({})
+export const ColorContext = createContext({})
 
 export const UPDATE_COLOR = 'UPDATE_COLOR'
 
@@ -13,13 +13,13 @@ const reducer = (state, action) => {
   }
 }
 
-export const ColorContext = props => {
+export const ColorContextWrapper = props => {
 
   const [color, dispatch] = useReducer(reducer, 'blue')
 
   return (
-    <ColorContextWrapper.Provider value={{ color, dispatch }}>
+    <ColorContext.Provider value={{ color, dispatch }}>
       {props.children}
-    </ColorContextWrapper.Provider>
+    </ColorContext.Provider>
   )
 }

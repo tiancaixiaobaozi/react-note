@@ -1,8 +1,8 @@
 import React, { useContext } from "react";
-import { ColorContextWrapper, UPDATE_COLOR } from "./ColorContextWrapper";
+import { ColorContext, UPDATE_COLOR } from "./ColorContextWrapper";
 
 export default function ChangeColorButton() {
-  const { dispatch } = useContext(ColorContextWrapper)
+  const { dispatch } = useContext(ColorContext)
   return (
     <div>
       <button onClick={() => {dispatch({type: UPDATE_COLOR, color: 'red'})}}>红色</button>
